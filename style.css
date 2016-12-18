@@ -1,3 +1,83 @@
-body {
-    background-image: url("weather.png");
+
+/* title bar */
+/*.demo-layout-transparent {
+  background: url('preview_blue-material-minimal.jpg') center / cover;
+  
+}*/
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer {
+  color: black;
+  font-style: bold;
+}
+
+.demo-layout-transparent .mdl-navigation__link {
+	color:black;
+}
+
+@font-face{
+	font-family: "bromello";
+	src: url('bromello.ttf');;
+}
+
+.mdl-layout-title {
+	font-family: "bromello";
+	font-size: 50px;
+}
+
+.footer {
+	position:fixed;
+  height:75px;
+  bottom:0px;
+  left:0px;
+  background-color: #374049;
+  right:0px;
+  margin-bottom:0px;
+}
+
+.footer-inner { 
+	text-align: center;
+	padding-top: 15px;
+ }
+
+.main-body {
+	background: white;
+}
+
+.image {
+	min-height: 200px;
+  max-height: 300px;
+  position: relative;
+  background-image: url('food.png');
+  opacity: 0.8
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    font-size: 13px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
